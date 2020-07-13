@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { searchMovie } from '../../actions/searchActions';
+import { searchMovie, fetchMovies } from '../../actions/searchActions';
 
 export class Searchform extends Component {
   onChange = event => {
     this.props.searchMovie(event.target.value);
+  };
+  onSubmit = event => {
+    event.preventDefault();
+    this.props.fetchMovies(this.props.text);
   };
   render() {
     return (
@@ -35,4 +39,4 @@ const mapStateToProps = state => ({
   text: state.movies.text
 });
 
-export default connect(mapStateToProps, {searchMovie})(Searchform);
+export default connect(mapStateToProps, {searchMovie, fetchMovies})(Searchform);
