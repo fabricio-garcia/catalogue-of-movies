@@ -50,7 +50,7 @@ Additional description about the project and its features.
 
 ### Install
 
-- In `restaurant-page` directory, run `npm install`.
+- In `catalogue-of-movies` directory, run `npm install`.
 
 ### Usage
 
@@ -88,7 +88,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Codecademy](https://www.codecademy.com/)
+- [Microverse](https://www.codecademy.com/)
 
 ## 📝 License
 
