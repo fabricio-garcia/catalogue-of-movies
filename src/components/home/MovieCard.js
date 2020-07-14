@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class MovieCard extends Component {
@@ -15,10 +16,10 @@ export class MovieCard extends Component {
             -
             {movie.Year}
           </h5>
-          <a className="btn btn-primary" href="/#">
+          <Link className="btn btn-primary" to={`/movie/${movie.imdbID}`}>
             Movie Details
             <i className="fas fa-chevron-right" />
-          </a>
+          </Link>
         </div>
       </div>
     );

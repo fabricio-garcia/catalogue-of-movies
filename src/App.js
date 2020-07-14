@@ -1,5 +1,7 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { Provider } from 'react-redux';
+import { HashRouter as Router } from 'react-router-dom';
 import './App.css';
 
 import NavBar from './components/NavBar/NavBar';
@@ -10,9 +12,11 @@ import store from './store';
 function App() {
   return (
     <Provider store={store}>
-      <NavBar />
-      <Landing />
-      <Footer />
+      <Router>
+        <NavBar />
+        <Landing />
+        <Footer />
+      </Router>
     </Provider>
   );
 }
