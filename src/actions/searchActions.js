@@ -17,7 +17,7 @@ export const fetchMovies = text => dispatch => {
     .get(`http://www.omdbapi.com/?apikey=${OMDbAPIKey}&s=${text}`)
     .then(response => dispatch({
       type: FETCH_MOVIES,
-      payload: response.data.Search,
+      payload: response.data,
     }))
     // eslint-disable-next-line no-console
     .catch(error => console.log(error));
