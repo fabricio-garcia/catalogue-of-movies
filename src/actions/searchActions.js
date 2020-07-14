@@ -17,5 +17,6 @@ export const fetchMovies = text => dispatch => {
       type: FETCH_MOVIES,
       payload: response.data.Search,
     }))
+    // eslint-disable-next-line no-console
     .catch(error => console.log(error));
 };
