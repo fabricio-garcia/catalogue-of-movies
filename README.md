@@ -15,7 +15,7 @@
 
 # Catalogue-of-movies
 
-> A catalogue of movies online using Reac, Redux and the OMDb API
+> A catalogue of movies online using React, Redux and the OMDb API
 
 ![](catalogue-of-movies.gif)
 
