@@ -18,9 +18,7 @@ export const fetchMovies = text => dispatch => {
     .then(response => dispatch({
       type: FETCH_MOVIES,
       payload: response.data,
-    }))
-    // eslint-disable-next-line no-console
-    .catch(error => console.log(error));
+    }));
 };
 
 export const fetchMovie = id => dispatch => {
@@ -29,9 +27,7 @@ export const fetchMovie = id => dispatch => {
     .then(response => dispatch({
       type: FETCH_MOVIE,
       payload: response.data,
-    }))
-    // eslint-disable-next-line no-console
-    .catch(err => console.log(err));
+    }));
 };
 
 export const setLoading = () => ({
