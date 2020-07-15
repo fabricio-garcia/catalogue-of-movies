@@ -1,11 +1,10 @@
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { fetchMovie, setLoading } from '../../actions/searchActions';
-
 import Spinner from '../Spinner/Spinner';
 
 export class Movie extends Component {
@@ -96,5 +95,13 @@ const mapStateToProps = state => ({
   loading: state.movies.loading,
   movie: state.movies.movie,
 });
+
+Movie.propTypes = {
+  fetchMovie: PropTypes.func.isRequired,
+  setLoading: PropTypes.func.isRequired,
+  match: PropTypes.shape.isRequired,
+  loading: PropTypes.bool.isRequired,
+  movie: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default connect(mapStateToProps, { fetchMovie, setLoading })(Movie);

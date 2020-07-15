@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable react/prop-types */
 /* eslint-disable import/no-named-as-default */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 import MovieCard from './MovieCard';
@@ -24,5 +24,9 @@ export class MoviesContainer extends Component {
 const mapStateToProps = state => ({
   movies: state.movies.movies,
 });
+
+MoviesContainer.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default connect(mapStateToProps)(MoviesContainer);
