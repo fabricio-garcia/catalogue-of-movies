@@ -14,10 +14,14 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <NavBar />
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/movie/:id" component={Movie} />
-        <Footer />
+        <div className="page-container">
+          <div className="content-warp">
+            <NavBar />
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/movie/:id" component={Movie} />
+          </div>
+          <Footer className="footer" />
+        </div>
       </Router>
     </Provider>
   );
