@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/catalogue-of-movies/static/css/main.0698c0a6.chunk.css",
+    "main.js": "/catalogue-of-movies/static/js/main.d76c4b6e.chunk.js",
+    "main.js.map": "/catalogue-of-movies/static/js/main.d76c4b6e.chunk.js.map",
+    "runtime-main.js": "/catalogue-of-movies/static/js/runtime-main.a426cdcc.js",
+    "runtime-main.js.map": "/catalogue-of-movies/static/js/runtime-main.a426cdcc.js.map",
+    "static/js/2.c9590001.chunk.js": "/catalogue-of-movies/static/js/2.c9590001.chunk.js",
+    "static/js/2.c9590001.chunk.js.map": "/catalogue-of-movies/static/js/2.c9590001.chunk.js.map",
+    "index.html": "/catalogue-of-movies/index.html",
+    "precache-manifest.e8411419a716526b58ddad416e7260f4.js": "/catalogue-of-movies/precache-manifest.e8411419a716526b58ddad416e7260f4.js",
+    "service-worker.js": "/catalogue-of-movies/service-worker.js",
+    "static/css/main.0698c0a6.chunk.css.map": "/catalogue-of-movies/static/css/main.0698c0a6.chunk.css.map",
+    "static/js/2.c9590001.chunk.js.LICENSE.txt": "/catalogue-of-movies/static/js/2.c9590001.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a426cdcc.js",
+    "static/js/2.c9590001.chunk.js",
+    "static/css/main.0698c0a6.chunk.css",
+    "static/js/main.d76c4b6e.chunk.js"
+  ]
+}
