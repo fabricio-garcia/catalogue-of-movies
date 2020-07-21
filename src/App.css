@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Set core body defaults */
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#movies img,
+#movie img {
+  width: 100%;
+}
+
+.brand-text {
+  font-size: 2rem;
+}
+
+#react-logo {
+  color: #00d8ff;
+}
+
+#imdb-logo {
+  color: #f5de50;
+}
+
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 390px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #movies .col-md-3 img {
+    height: 240px;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
   }
 }
