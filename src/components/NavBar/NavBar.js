@@ -6,7 +6,7 @@ function Navbar() {
       <nav className="navbar navbar-light bg-dark mb-5">
         <div className="container">
           <div className="navbar-header text-light">
-            Catalogue Of Movies
+            <h1>Catalogue Of Movies</h1>
           </div>
           <ul className="navbar-nav ml-auto text-light d-inline-block">
             <li className="nav-item d-inline-block mr-4">

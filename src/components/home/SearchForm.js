@@ -1,15 +1,26 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { searchMovie, fetchMovies } from '../../actions/searchActions';
+import PropTypes from 'prop-types';
+import { searchMovie, fetchMovies, setLoading } from '../../actions/searchActions';
 
-export class Searchform extends Component {
-  onChange = event => {
+export class SearchForm extends Component {
+  constructor(props) {
+    super(props);
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  onChange(event) {
     this.props.searchMovie(event.target.value);
-  };
-  onSubmit = event => {
+  }
+
+  onSubmit(event) {
     event.preventDefault();
     this.props.fetchMovies(this.props.text);
-  };
+    this.props.setLoading();
+  }
+
   render() {
     return (
       <div className="jumbotron jumbotron-fluid mt-5 text-center bg-light">
@@ -36,7 +47,14 @@ export class Searchform extends Component {
 }
 
 const mapStateToProps = state => ({
-  text: state.movies.text
+  text: state.movies.text,
 });
 
-export default connect(mapStateToProps, {searchMovie, fetchMovies})(Searchform);
+SearchForm.propTypes = {
+  searchMovie: PropTypes.arrayOf(PropTypes.string).isRequired,
+  fetchMovies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  setLoading: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired,
+};
+
+export default connect(mapStateToProps, { searchMovie, fetchMovies, setLoading })(SearchForm);

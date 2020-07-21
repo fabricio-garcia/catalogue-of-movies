@@ -1,68 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** "reference style" links are used for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues-open][issues-open-shield]][issues-open-url]
+[![Issues-closed][issues-closed-shield]][issues-closed-url]
 
-In the project directory, you can run:
+# Catalogue-of-movies
 
-### `yarn start`
+> A catalogue of movies online using React, Redux and the OMDb API
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](catalogue-of-movies.gif)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Additional description about the project and its features.
 
-### `yarn test`
+## Built With
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Redux
+- Axios
+- react-router
+- OMDb API
 
-### `yarn build`
+## Live Demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live Demo Link](https://catalogue-of-movies.surge.sh)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> To get a local copy up and running follow these simple example steps:
 
-### `yarn eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `npm`
+- `git`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Open a new `terminal` window.
+- Run `git clone git@github.com:fabricio-garcia/catalogue-of-movies.git`.
+- Run `cd catalogue-of-movies`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Install
 
-## Learn More
+- In `catalogue-of-movies` directory, run `npm install`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+1. Enter the name of the movie or tv show in search bar, e.g., 'star wars'.
+2. Select the movie that you want to check details from the results and hit 'Movie Details'
+3. In the new page hit 'View on IMDB' for more information or 'Go Back' to return.
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- `npm run start`: Runs the app in the development mode.
 
-### `yarn build` fails to minify
+- `npm run build`: Builds the app for production to the build folder.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Run tests
+
+No test have been added to this project
+
+## Authors
+
+👤 **Fabricio Garcia**
+
+- Github: [@fabricio-garcia](https://github.com/fabricio-garcia)
+- Twitter: [@this_fab](https://twitter.com/this_fab)
+- Linkedin: [@fabricio-garcia](https://linkedin.com/fabricio-garcia)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [Microverse](https://www.codecademy.com/)
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/fabricio-garcia/catalogue-of-movies?style=plastic
+[contributors-url]: https://github.com/fabricio-garcia/catalogue-of-movies/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/fabricio-garcia/catalogue-of-movies?style=plastic
+[forks-url]: https://github.com/fabricio-garcia/catalogue-of-movies/network/members
+[stars-shield]: https://img.shields.io/github/stars/fabricio-garcia/catalogue-of-movies?style=plastic
+[stars-url]: https://github.com/fabricio-garcia/catalogue-of-movies/stargazers
+[issues-open-shield]: https://img.shields.io/github/issues/fabricio-garcia/catalogue-of-movies?style=plastic
+[issues-closed-url]: https://github.com/fabricio-garcia/catalogue-of-movies/issues
+[issues-closed-shield]: https://img.shields.io/github/issues-closed/fabricio-garcia/catalogue-of-movies?style=plastic
+[issues-open-url]: https://github.com/fabricio-garcia/catalogue-of-movies/issues
