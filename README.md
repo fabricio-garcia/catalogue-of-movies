@@ -66,7 +66,7 @@ Additional description about the project and its features.
 
 ### Run tests
 
-No test have been added to this project
+- Run `npm test` in your terminal (check that you are in the repo's folder) to run all the testing suite.
 
 ## Authors
 
