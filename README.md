@@ -88,7 +88,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Microverse](https://www.codecademy.com/)
+- This app is based on the tutorials provided by [Yaser AlAzm](https://github.com/yaser-alazem)
 
 ## 📝 License
 
